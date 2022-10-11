@@ -2,7 +2,7 @@
 
 [JS-плагины](https://crashmet.github.io/js_project/plugins/index)
 
-[База студентов](https://crashmet.github.io/js_project/student/index)
+[База студентов](https://crashmet.github.io/js_project/student/main)
 
 [ToDo лист семьи](https://crashmet.github.io/first_project/todo/index)
 
