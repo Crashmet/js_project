@@ -4,7 +4,7 @@
 
 [База студентов](https://crashmet.github.io/js_project/student/main)
 
-[ToDo лист семьи](https://crashmet.github.io/first_project/todo/index)
+[ToDo лист семьи](https://crashmet.github.io/first_project/todo/dad)
 
 
 **Цель:**
@@ -14,3 +14,4 @@
 - Научиться создавать функции
 - Работать с DOM-элементами
 - Работать с событиями в браузере 
+- Научиться хранить данные при помощи Local Storage
