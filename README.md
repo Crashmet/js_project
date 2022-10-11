@@ -4,7 +4,7 @@
 
 [База студентов](https://crashmet.github.io/js_project/student/main)
 
-[ToDo лист семьи](https://crashmet.github.io/first_project/todo/index)
+[ToDo](https://crashmet.github.io/js_project/todo/index.html)
 
 
 **Цель:**
