@@ -1,5 +1,4 @@
 (function(){
-  // dz
   let arrSaveData = [];
   let listName = '';
 
@@ -7,7 +6,6 @@
   function createAppTitle(title) {
     let appTitle = document.createElement('h2');
     appTitle.innerHTML = title;
-    // возвращаем элемент что бы можно было к нему обратиться
     return appTitle;
   }
 
@@ -40,7 +38,6 @@
         button.disabled = true;
       }
     });
-    // нужно вернуть их от сюда, иначе мы не будем иметь к ним доступа. т.к. созданы они были здесь
     return{
       form,
       input,
@@ -55,63 +52,7 @@
     return list;
   }
 
-  // // создает элемент списка 
-  // function createTodoItem(obj) {
-  //   let item = document.createElement('li');
-  //   // кнопки помещаем в элемент, который красиво покажет их в одной группе
-  //   let buttonGroup = document.createElement('div');
-  //   let doneButton = document.createElement('button');
-  //   let deleteButton = document.createElement('button');
-
-  //   // устанавливаем стили для элемента списка, а так же для размещения кнопок в его правой части с помощью флекс
-  //   item.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'algin-items-center');
-  //   item.textContent = obj.name;
-
-  //   buttonGroup.classList.add('btn-group', 'btn-group-sm');
-  //   doneButton.classList.add('btn', 'btn-success');
-  //   doneButton.textContent = 'Готово';
-  //   deleteButton.classList.add('btn', 'btn-danger');
-  //   deleteButton.textContent = 'Удалить';
   
-  //   // dz
-  //   if (obj.done === true) item.classList.add('list-group-item-success');
-
-  //   // dz добавляем обработчик на кнопки
-  //   doneButton.addEventListener('click', function() {
-  //     item.classList.toggle('list-group-item-success');
-  //     // dz
-  //     if (obj.done === true){
-  //       obj.done = false;
-  //     } else {
-  //       obj.done = true;
-  //     }
-      
-  //     saveList(arrSaveData, listName);
-  //   });
-  //   deleteButton.addEventListener('click', function() {
-  //     if (confirm('Вы уверены?')) {
-  //       // dz
-  //       arrSaveData.splice(arrSaveData.indexOf(obj), 1);
-  //       item.remove();
-  //       saveList(arrSaveData, listName);
-  //     }
-  //   })
-
-  //   // вкладываем кнопки в отдельный элемент, чтобы они объеденились в один блок
-  //   buttonGroup.append(doneButton);
-  //   buttonGroup.append(deleteButton);
-  //   item.append(buttonGroup);
-
-  //   localStorage.setItem('arrSaveCase', JSON.stringify(arrSaveData));
-
-  //   // приложению нужен доступ к самому элементу и кнопкам, чтобы обрабатывать события нажатия
-  //   return{
-  //     item,
-  //     doneButton,
-  //     deleteButton,
-  //   };
-  // };
-
   function createTodoItemElement(todoItemData, {onDone, onDelete}) {
     let item = document.createElement('li');
     // кнопки помещаем в элемент, который красиво покажет их в одной группе
@@ -153,11 +94,6 @@
     return item;
   };
 
-  // // dz создаем локальное ранилище в браузере
-  // function saveList(arr, owner) {
-  //   localStorage.setItem(owner, JSON.stringify(arr));
-  // }
-
 
   // создает список дел
   async function createTodoApp(container, title, owner){
@@ -193,24 +129,11 @@
       },
     };
 
-    // listName = owner;
-    // создаем в контейнере 
     container.append(todoAppTitle);
     // вначале берем .форм а не сами элементы формы
     container.append(todoItemForm.form);
     container.append(todoList);
 
-    // // dz
-    // let localData = localStorage.getItem(listName)
-
-    // if(localData !== null && localData !== '') {
-    //   arrSaveData = JSON.parse(localData)
-    // }
-
-    // for(let obj of arrSaveData){
-    //   let todoItem = createTodoItem(obj);
-    //   todoList.append(todoItem.item);
-    // }
 
     // server. отправляем запрос на список всех дел
     // добавил фильтр по оwner на список дел
@@ -251,22 +174,6 @@
       // сервер. берем данные из сервера и создаем элемент
       const todoItemElement = createTodoItemElement(todoItemData, handlers);
 
-      
-      // // dz
-      // let newItem = {
-      //   name: todoItemForm.input.value,
-      //   done: false
-      // }
-
-      // todoItemForm.button.disabled = true;
-      // результат выполнения функции
-
-      // dz
-      // arrSaveData.push(newItem);
-      // saveList(arrSaveData, listName);
-
-      // создаем и добавляем в список новое дело с названием из содержимого импута
-      // item = элемент ли
       todoList.append(todoItemElement);
 
       // обнуляем значение в поле, чтобы не пришлось стирать его в ручную
@@ -276,7 +183,6 @@
     });
     
   };
-
   
   window.createTodoApp = createTodoApp;
 })();
