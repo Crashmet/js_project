@@ -238,7 +238,7 @@
       // sever 
       const response = await fetch('http://localhost:3000/api/todos', {
         method: 'POST',
-        body: JSON.stringify({
+        body: JSON.stringify ({
           name: todoItemForm.input.value.trim(),
           owner,
         }),
