@@ -6,6 +6,8 @@
 
 [ToDo](https://crashmet.github.io/js_project/todo/index.html)
 
+[ToDo (смена темы)](https://crashmet.github.io/js_project/todo-swap-CSS/index.html)
+
 [Блог](https://crashmet.github.io/js_project/blog/list.html)
 
 [Mocha - автотест](https://crashmet.github.io/js_project/mocha/index.html)
