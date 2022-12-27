@@ -10,7 +10,7 @@
 
 [Блог - работа с GET запросами](https://crashmet.github.io/js_project/blog/list.html)
 
-[AJAX - тестирование POST запросов](https://crashmet.github.io/js_project/AJAX - requests/index.html)
+[AJAX - тестирование POST запросов](https://crashmet.github.io/js_project/AJAX-requests/index.html)
 
 [Mocha - автотест](https://crashmet.github.io/js_project/mocha/index.html)
 
