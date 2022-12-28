@@ -12,7 +12,7 @@
 
 [News App - GET запросы](https://crashmet.github.io/js_project/news-app/index.html)
 
-[Блог -  async/await](https://crashmet.github.io/js_project/blog/list.html)
+[Блог - fetch/async/await](https://crashmet.github.io/js_project/blog/list.html)
 
 [Mocha - автотест](https://crashmet.github.io/js_project/mocha/index.html)
 
@@ -28,5 +28,6 @@
 - Local Storage
 - Работа базой данной сервера при помощи AJAX запросов
 - Promise and callback
+- fetch async/await
 - Управление CSS переменными с помощью JS
 - bootstrap and materialize
