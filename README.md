@@ -28,6 +28,8 @@
 - Local Storage
 - Работа базой данной сервера при помощи AJAX запросов
 - Promise and callback
-- fetch async/await
+- fetch, async/await, observables
+- WebSocket 
+- BroadcastChannel
 - Управление CSS переменными с помощью JS
 - bootstrap and materialize
