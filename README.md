@@ -1,9 +1,7 @@
 # JS_project – Набор проектов для практики Java-script
 ```
-Привет! Тут собраны все мои начальные работы JS.
+Привет! Тут собраны все мои начальные работы JS. Работы были выполнены самостоятельно. Это мои домашния задания из куррсов. 
 ```
-
-[JS - плагины](https://crashmet.github.io/js_project/plugins/index)
 
 [База студентов - методы массивов и объектов](https://crashmet.github.io/js_project/student/main)
 
@@ -12,8 +10,6 @@
 [ToDo - JS и CSS переменные](https://crashmet.github.io/js_project/todo-swap-CSS/index.html)
 
 [AJAX - POST запросы](https://crashmet.github.io/js_project/AJAX-requests/index.html)
-
-[News App - GET запросы](https://crashmet.github.io/js_project/news-app/index.html)
 
 [Блог - fetch/async/await](https://crashmet.github.io/js_project/blog/list.html)
 
