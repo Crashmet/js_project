@@ -1,4 +1,7 @@
 # JS_project – Набор проектов для практики Java-script
+```
+Привет! Тут собраны все мои начальные работы JS.
+```
 
 [JS - плагины](https://crashmet.github.io/js_project/plugins/index)
 
